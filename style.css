@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+    background: #13c4f6;
+    border-radius: 8px;
+}
+
+.active {
+    background: #13c4f6;
+    border-radius: 8px;
+}
+
+.contact-btn {
+  background: #333;
+  color: #fff;
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 1px black;
+}
+
+.hero p {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  -webkit-text-stroke: 1px black;
+}
+
+/* Hero Images */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.home-hero {
+  background-image: url('./images/home/home-hero.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food-hero {
+  background-image: url('./images/food/food-hero.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lodging-hero {
+  background-image: url('./images/home/lodging.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transportation-hero {
+  background-image: url('./images/transportation/transportation-hero.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.island-activities-hero {
+  background-image: url('./images/island-activities/island-activities-hero.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faq-hero {
+  background-image: url('./images/faq/faq-hero.jpg');
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+  align-items: center;
+  padding-top: 152px;  
+}
+
+.contact-background {
+  background-image: url('./images/contact/contact-background.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top > main > section > div.contact-container.hero > p {
+  color: #fff;
+}
+
+/* Home Images */
+
+.home-image-food {
+  background-image: url('./images/home/food.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.home-image-lodging {
+  background-image: url('./images/home/lodging.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.home-image-transportation {
+  background-image: url('./images/home/transportation.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.home-image-island-activities {
+  background-image: url('./images/home/island-activities.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+/* Food Images */
+
+.food-image-supermarket-1 {
+  background-image: url('./images/food/supermarket-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.food-image-supermarket-2 {
+  background-image: url('./images/food/supermarket-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.food-image-grocery-1 {
+  background-image: url('./images/food/grocery-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.food-image-grocery-2 {
+  background-image: url('./images/food/grocery-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.food-image-convenience {
+  background-image: url('./images/food/convenience.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.food-image-restaurant-1 {
+  background-image: url('./images/food/restaurant-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-2 {
+  background-image: url('./images/food/restaurant-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-3 {
+  background-image: url('./images/food/restaurant-3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-4 {
+  background-image: url('./images/food/restaurant-4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-5 {
+  background-image: url('./images/food/restaurant-5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-6 {
+  background-image: url('./images/food/restaurant-6.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-7 {
+  background-image: url('./images/food/restaurant-7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-8 {
+  background-image: url('./images/food/restaurant-8.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-9 {
+  background-image: url('./images/food/restaurant-9.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.food-image-restaurant-10 {
+  background-image: url('./images/food/restaurant-10.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Lodging Images */
+
+.lodging-image-hotel-1 {
+  background-image: url('./images/lodging/hotel-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.lodging-image-resort {
+  background-image: url('./images/lodging/resort.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.lodging-image-hotel-2 {
+  background-image: url('./images/lodging/hotel-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.lodging-image-bnb {
+  background-image: url('./images/lodging/bnb.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Transportation Images */
+
+.transportation-image-plane {
+  background-image: url('./images/transportation/plane.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.transportation-image-cruise {
+  background-image: url('./images/transportation/cruise.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.transportation-image-bus-1 {
+  background-image: url('./images/Transportation/bus-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.transportation-image-bus-2 {
+  background-image: url('./images/Transportation/bus-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.transportation-image-taxi {
+  background-image: url('./images/Transportation/taxi.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.transportation-image-rental {
+  background-image: url('./images/Transportation/rental.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.transportation-image-bike {
+  background-image: url('./images/Transportation/bike.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+/* Island Activities Images */
+
+.island-activities-image-city {
+  background-image: url('./images/island-activities/city.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-beach-1 {
+  background-image: url('./images/island-activities/beach-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-tour {
+  background-image: url('./images/island-activities/tour.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.island-activities-image-hike {
+  background-image: url('./images/island-activities/hike.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.island-activities-image-volcano {
+  background-image: url('./images/island-activities/volcano.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.island-activities-image-arcade {
+  background-image: url('./images/island-activities/arcade.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-art {
+  background-image: url('./images/island-activities/art.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-bowling {
+  background-image: url('./images/island-activities/bowling.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-charter {
+  background-image: url('./images/island-activities/charter.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-club {
+  background-image: url('./images/island-activities/club.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-golf {
+  background-image: url('./images/island-activities/golf.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-helicopter {
+  background-image: url('./images/island-activities/helicopter.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-microbrewery {
+  background-image: url('./images/island-activities/microbrewery.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-movie {
+  background-image: url('./images/island-activities/movie.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-museum {
+  background-image: url('./images/island-activities/museum.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-pub {
+  background-image: url('./images/island-activities/pub.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-rainforest {
+  background-image: url('./images/island-activities/rainforest.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-snorkel {
+  background-image: url('./images/island-activities/snorkel.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.island-activities-image-zipline {
+  background-image: url('./images/island-activities/zipline.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Section Layout */
+
+.section {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #777;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* Map */
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 1100px;
+  height: 600px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Layouts */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.card-grid-padding {
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 540px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.card.horizontal {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  margin: 1rem auto;
+}
+
+.card.horizontal .image-placeholder {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.card .price {
+  font-style: italic;
+  color: #000;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #13c4f6;
+  border: 1px solid #13c4f6;
+}
+
+/* Form */
+
+.form-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  margin-bottom: 152px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  text-align: left;
+}
+
+form input,
+form textarea {
+  text-align: left;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  margin-bottom: 1.25rem;
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+form textarea {
+  padding-bottom: 4rem;
+}
+
+#submit {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 1rem 4rem;
+  background: #fafafa;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-col {
+  margin: 1rem;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.back-to-top {
+  bottom: 30px;
+  right: 30px;
+  text-decoration: none;
+}
+
+.back-to-top img {
+  width: 45px;         /* adjust size as needed */
+  height: 45px;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top img:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+.image-citations {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.image-citations h2 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card.horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .map-container {
+    max-width: 400px;
+  }
+
+  .card.horizontal .image-placeholder {
+    width: 100%;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
